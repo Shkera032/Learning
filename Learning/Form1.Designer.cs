@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             closeButton = new Button();
+            courseReq = new Button();
             SuspendLayout();
             // 
             // closeButton
@@ -41,11 +42,22 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += button1_Click;
             // 
+            // courseReq
+            // 
+            courseReq.Location = new Point(105, 238);
+            courseReq.Name = "courseReq";
+            courseReq.Size = new Size(113, 23);
+            courseReq.TabIndex = 1;
+            courseReq.Text = "Запрос курса";
+            courseReq.UseVisualStyleBackColor = true;
+            courseReq.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(courseReq);
             Controls.Add(closeButton);
             Name = "Form1";
             Text = "Form1";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button closeButton;
+        private Button courseReq;
     }
 }
