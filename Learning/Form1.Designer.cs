@@ -34,7 +34,7 @@
             // 
             // closeButton
             // 
-            closeButton.Location = new Point(336, 206);
+            closeButton.Location = new Point(110, 83);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(75, 23);
             closeButton.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // courseReq
             // 
-            courseReq.Location = new Point(105, 238);
+            courseReq.Location = new Point(91, 45);
             courseReq.Name = "courseReq";
             courseReq.Size = new Size(113, 23);
             courseReq.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(296, 157);
             Controls.Add(courseReq);
             Controls.Add(closeButton);
             Name = "Form1";
