@@ -30,11 +30,13 @@
         {
             closeButton = new Button();
             courseReq = new Button();
+            getCoursJSON = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // closeButton
             // 
-            closeButton.Location = new Point(110, 83);
+            closeButton.Location = new Point(105, 397);
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(75, 23);
             closeButton.TabIndex = 0;
@@ -44,7 +46,7 @@
             // 
             // courseReq
             // 
-            courseReq.Location = new Point(91, 45);
+            courseReq.Location = new Point(86, 359);
             courseReq.Name = "courseReq";
             courseReq.Size = new Size(113, 23);
             courseReq.TabIndex = 1;
@@ -52,21 +54,43 @@
             courseReq.UseVisualStyleBackColor = true;
             courseReq.Click += button1_Click_1;
             // 
+            // getCoursJSON
+            // 
+            getCoursJSON.Location = new Point(86, 330);
+            getCoursJSON.Name = "getCoursJSON";
+            getCoursJSON.Size = new Size(113, 23);
+            getCoursJSON.TabIndex = 2;
+            getCoursJSON.Text = "button1";
+            getCoursJSON.UseVisualStyleBackColor = true;
+            getCoursJSON.Click += getCoursJSON_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(43, 55);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(296, 157);
+            ClientSize = new Size(296, 439);
+            Controls.Add(textBox1);
+            Controls.Add(getCoursJSON);
             Controls.Add(courseReq);
             Controls.Add(closeButton);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button closeButton;
         private Button courseReq;
+        private Button getCoursJSON;
+        private TextBox textBox1;
     }
 }
