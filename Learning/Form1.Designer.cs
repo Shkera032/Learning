@@ -42,7 +42,7 @@
             closeButton.TabIndex = 0;
             closeButton.Text = "Close";
             closeButton.UseVisualStyleBackColor = true;
-            closeButton.Click += button1_Click;
+            closeButton.Click += closeButton_Click;
             // 
             // courseReq
             // 
@@ -52,7 +52,7 @@
             courseReq.TabIndex = 1;
             courseReq.Text = "Запрос курса";
             courseReq.UseVisualStyleBackColor = true;
-            courseReq.Click += button1_Click_1;
+            courseReq.Click += courseReq_Click;
             // 
             // getCoursJSON
             // 

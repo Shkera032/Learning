@@ -12,12 +12,12 @@ namespace Learning
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private async void button1_Click_1(object sender, EventArgs e)
+        private async void courseReq_Click(object sender, EventArgs e)
         {
 
             HttpClient httpClient = new HttpClient();
