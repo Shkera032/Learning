@@ -23,7 +23,7 @@ namespace Learning
             HttpClient httpClient = new HttpClient();
             using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://www.cbr-xml-daily.ru/daily.xml");
             using HttpResponseMessage response = await httpClient.SendAsync(request);
-            string  content = await response.Content.ReadAsStringAsync();
+            string content = await response.Content.ReadAsStringAsync();
             XDocument xdoc = XDocument.Parse(content);
             var dateVal = xdoc.Element("ValCurs");
             var el = xdoc.Element("ValCurs").Elements("Valute");
